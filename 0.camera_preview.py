@@ -24,7 +24,7 @@ HEIGHT = 720
 #cv2.namedWindow('screen', cv2.WINDOW_AUTOSIZE)
 cv2.namedWindow('screen', cv2.WINDOW_NORMAL)
 #cv2.moveWindow('screen', LEFT, TOP)
-cv2.setWindowProperty('screen', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+#cv2.setWindowProperty('screen', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 test = cv2.imread("./test.png")
 print(test.shape[:3])
 cv2.drawMarker(test, (10, 10), (0, 0, 255))
