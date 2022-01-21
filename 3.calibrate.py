@@ -61,7 +61,7 @@ def main():
     used_dirnames = []
     gc_fname_lists = []
     for dname in dirnames:
-        gc_fnames = sorted(glob.glob(dname + '/graycode_*'))
+        gc_fnames = sorted(glob.glob(dname + '/pattern_*'))
         if len(gc_fnames) == 0:
             continue
         used_dirnames.append(dname)
