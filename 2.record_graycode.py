@@ -24,7 +24,7 @@ xoutRgb = pipeline.createXLinkOut()
 xoutRgb.setStreamName("rgb")
 
 # Properties
-camRgb.setPreviewSize(1920, 1080)
+camRgb.setPreviewSize(1280, 720)
 camRgb.setInterleaved(False)
 camRgb.setColorOrder(dai.ColorCameraProperties.ColorOrder.RGB)
 
@@ -69,7 +69,7 @@ with dai.Device(pipeline) as device:
         if cv2.waitKey(1) == ord('q'):
             break
 
-        cv2.imwrite(f"{dirName}/pattern_{str(i).zfill(2)}.png", img.getCvFrame())
+        cv2.imwrite(f"{dirName}/graycode_{str(i).zfill(2)}.png", img.getCvFrame())
         i = i + 1
         if i == 44:
             break
